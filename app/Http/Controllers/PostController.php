@@ -41,7 +41,6 @@ final class PostController extends Controller
             )
         );
 
-
         return response()->json(PostViewResource::make($post));
     }
 

@@ -4,7 +4,12 @@ declare(strict_types=1);
 
 namespace App\Http\DTO;
 
-class PostCreateDTO
+final class PostCreateDTO
 {
-
+    public function __construct(
+        public string $title,
+        public string $body = '',
+    )
+    {
+    }
 }
